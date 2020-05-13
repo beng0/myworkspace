@@ -30,6 +30,7 @@ class Base_():
         else:
             #找到了就返回正确的元素位置
             return ele
+<<<<<<< HEAD
 # 获取多个元素
     def get_positions(self,method,value):
         eles = []
@@ -41,6 +42,8 @@ class Base_():
             return None
         else:
             return eles
+=======
+>>>>>>> 4e161945cabc8c221365e5f66c24d21c19097746
     #打开网址
     def open_(self,url):
         driver.get(url)

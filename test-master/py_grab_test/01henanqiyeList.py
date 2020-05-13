@@ -1,5 +1,6 @@
 #coding=utf-8
 
+<<<<<<< HEAD
 from selenium_base import  *
 from py_grab_test.base import *
 import xlwt
@@ -11,10 +12,21 @@ se = Base_()
 
 se.open_("http://hngcjs.hnjs.gov.cn/company/list?corpname=")
 # driver.switch_to_frame("newsiframe")
+=======
+from py_grab_test.selenium_base import  *
+from py_grab_test.base import *
+from selenium.webdriver.support.select import Select
+
+se = Base_()
+
+se.open_("http://hngcjs.hnjs.gov.cn/company/qiyeListMaster")
+driver.switch_to_frame("newsiframe")
+>>>>>>> 4e161945cabc8c221365e5f66c24d21c19097746
 # ele = se.get_position("css selector","select#CretType")
 #
 # s = Select(ele)
 # s.select_by_value("1")
+<<<<<<< HEAD
 # 选择建筑业
 se.select_by_value("css selector","select#CretType","7")
 # 点击唤出企业注册地下拉框
@@ -57,3 +69,7 @@ for i in range(1,len_di+1):
 # print("success")
 
 
+=======
+se.select_by_value("css selector","select#CretType","1")
+se.click_("name","ctl09")
+>>>>>>> 4e161945cabc8c221365e5f66c24d21c19097746
